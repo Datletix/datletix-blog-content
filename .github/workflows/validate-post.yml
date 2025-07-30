@@ -1,0 +1,28 @@
+name: Validate Posts
+
+on:
+  pull_request:
+    branches:
+      - main
+      - review/**
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install markdownlint-cli front-matter
+
+      - name: Lint Markdown
+        run: npx markdownlint "**/*.md"
+
+      - name: Validate front-matter
+        run: node scripts/validate-frontmatter.js
