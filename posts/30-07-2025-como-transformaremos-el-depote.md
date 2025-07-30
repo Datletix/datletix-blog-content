@@ -50,7 +50,3 @@ Con esta visión, Datletix abre un nuevo capítulo en la historia del deporte, d
 Más que transformar el ciclismo, pretendemos **revolucionar la manera en que el deporte entiende su futuro**, estableciendo un estándar de excelencia que marcará el camino para las próximas generaciones.
 
 _El futuro del deporte es científico, es inteligente, es Datletix._
-
----
-
-Las fotografias fueron generadas con inteligencia artificial
