@@ -25,4 +25,4 @@ jobs:
         run: npx markdownlint "**/*.md"
 
       - name: Validate front-matter
-        run: node scripts/validate-frontmatter.js
+        run: node .github/scripts/validate-formatter.js
